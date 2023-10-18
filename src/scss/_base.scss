@@ -1,0 +1,437 @@
+body {
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "'Lexend'", sans-serif;
+  background: #000;
+}
+
+.displayCenterStart {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 7px;
+}
+.displayCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.displayCenterAli {
+  display: flex;
+  align-items: center;
+}
+.displayStart {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+.displayEnd {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.displaySpacebetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.displaySpacearound {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logoImg {
+  width: 120px;
+}
+.bgx1 {
+  -webkit-animation: rotating 26s linear infinite;
+  animation: rotating 26s linear infinite;
+}
+
+.bgx2 {
+  -webkit-animation: rotating2 6s linear infinite;
+  animation: rotating2 6s linear infinite;
+}
+
+.crypto {
+  -webkit-animation: rotating3 3s linear infinite;
+  animation: rotating3 3s linear infinite;
+}
+
+@-webkit-keyframes rotating3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating3 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotating {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotating2 {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotating2 {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+.sliderBox {
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  background-color: #121212;
+  border-top: 3px solid #e35f24;
+  text-align: center;
+  img {
+    width: auto;
+    max-width: 165px;
+  }
+}
+
+.apexcharts-tooltip {
+  border-radius: 5px;
+  cursor: default;
+  font-size: 14px;
+  left: 62px;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 12;
+  transition: 0.15s ease all;
+  background: #194129;
+}
+.chartBox {
+  position: relative;
+  width: 190px !important;
+}
+
+.apexcharts-canvas {
+  position: relative;
+  user-select: none;
+  width: 190px !important;
+}
+
+.shadeBox {
+  right: auto;
+  left: 0;
+  width: 450px;
+  /* bottom: auto; */
+  filter: blur(230px);
+  height: 550px;
+  opacity: 0.55;
+  top: 0;
+  z-index: -1;
+  position: absolute;
+  transform: rotate(45deg);
+  border-radius: 1000px;
+  background-image: radial-gradient(
+    36.67% 9.68% at 67.26% 8.27%,
+    #ff6600 0%,
+    #ff66004f 95.78%
+  );
+}
+
+.orangeshadeBox {
+  right: 0;
+  left: auto;
+  width: 450px;
+  /* bottom: auto; */
+  filter: blur(230px);
+  height: 450px;
+  opacity: 0.55;
+  top: 51%;
+  z-index: 99;
+  position: absolute;
+  transform: rotate(45deg);
+  border-radius: 1000px;
+  background-image: radial-gradient(
+    36.67% 9.68% at 67.26% 8.27%,
+    #ff6600 0%,
+    #ff66008a 95.78%
+  );
+}
+.orangeshadeBox1 {
+  left: 10%;
+  right: auto;
+  width: 600px;
+  /* bottom: auto; */
+  opacity: 0.2;
+  filter: blur(177px);
+  height: 200px;
+  border-radius: 1000px;
+  top: 29%;
+  z-index: 99;
+  position: absolute;
+  transform: rotate(132deg);
+  background-image: radial-gradient(
+    36.67% 9.68% at 67.26% 8.27%,
+    #2e0c21 0%,
+    #4a1833 95.78%
+  );
+}
+
+.purpleBox {
+  left: 0;
+  right: auto;
+  width: 300px;
+  /* bottom: auto; */
+  filter: blur(230px);
+  height: 300px;
+  opacity: 0.55;
+  top: 50%;
+  z-index: 99;
+  position: absolute;
+  transform: rotate(45deg);
+  border-radius: 1000px;
+
+  background-image: radial-gradient(
+    36.67% 9.68% at 67.26% 8.27%,
+    #ff6600 0%,
+    #ff66008a 95.78%
+  );
+}
+.purpleBox1 {
+  right: 0;
+  left: auto;
+  width: 300px;
+  bottom: auto;
+  filter: blur(260px);
+  height: 700px;
+  opacity: 0.6;
+  top: 0;
+  z-index: -11111;
+  position: absolute;
+  transform: rotate(45deg);
+  border-radius: 1000px;
+  background: transparent;
+}
+.glowing {
+  animation: glowing 2s linear infinite;
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0px 0px 40px 25px rgba(255, 102, 0, 0.768627451);
+  }
+  50% {
+    box-shadow: 0px 0px 45px 38px rgb(255 102 0 / 66%);
+  }
+  100% {
+    box-shadow: 0px 0px 40px 25px rgba(255, 102, 0, 0.768627451);
+  }
+}
+.livetrackBox::-webkit-scrollbar {
+  display: none;
+}
+.livetrackBox {
+  overflow: auto;
+  max-height: 750px;
+}
+
+* {
+  scrollbar-width: 0px;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+::-moz-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+.sideMenuBox::-webkit-scrollbar {
+  display: none;
+}
+.sideMenuBox {
+  overflow: auto;
+  height: calc(100vh - 201px);
+  // max-height: 544px;
+}
+
+.MuiBackdrop-root {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  z-index: -1;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.75);
+  -webkit-tap-highlight-color: transparent;
+  backdrop-filter: blur(2px);
+}
+.trackbutton {
+  height: 41px !important;
+  padding: 10px 18px !important;
+  font-size: 14px;
+  background: transparent !important;
+  box-shadow: 0 1px 0 0 #ad5165, 0 -1px 0 0 #7e46a1, 1px 0 0 0 #f5673f,
+    -1px 0 0 0 #f5673f, 1px -1px 0 0 #f5673f, -1px 1px 0 0 #f5673f,
+    1px 1px 0 0 #f5673f, -1px -1px 0 0 #f5673f !important;
+  font-weight: 600;
+  line-height: 21px;
+  /* margin-right: 10px; */
+  border-radius: 10px;
+  background-color: transparent !important;
+}
+.greenBox {
+  width: 40px;
+  height: 40px;
+  background: #5cd748;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 33px;
+}
+.redBox {
+  width: 40px;
+  height: 40px;
+  background: #ff3939;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 33px;
+}
+.barchart {
+  .apexcharts-tooltip.apexcharts-theme-light .apexcharts-tooltip-title {
+    color: #000 !important;
+  }
+  .apexcharts-tooltip.apexcharts-theme-light {
+    color: #000 !important;
+  }
+}
+
+.webkitcss {
+  .MuiInput-underline:before {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.25) !important;
+  }
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+  }
+}
+input:-webkit-autofill {
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.6) !important;
+  -webkit-background-clip: text !important;
+}
+
+.MuiSelect-selectMenu {
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.03);
+}
+.MuiSelect-selectMenu::before {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.MuiCheckbox-colorSecondary.Mui-checked {
+  color: #0D9C7A !important;
+}
+
+.TabBox {
+  .buttonBoxtab {
+    button {
+      color: #ffffff;
+      width: 100%;
+      cursor: pointer;
+      display: flex;
+      padding: 11px 0px;
+      font-size: 16px;
+      align-items: center;
+      font-family: "Lexend", sans-serif;
+      font-weight: 300;
+      white-space: pre;
+      text-decoration: none;
+      border: 1px solid transparent;
+      background-color: rgba(255, 255, 255, 0.04);
+      @media (max-width: 767px) {
+        font-size: 14px;
+      }
+      &.active {
+        color: #e9cb59;
+        border: 1px solid #e9cb59;
+      }
+    }
+  }
+}
+.timerText {
+  float: right;
+  margin-right: 82px !important;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
